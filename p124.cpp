@@ -4,8 +4,6 @@ using namespace std;
 #define endl '\n'
 #define _ << ' ' <<
 
-inline void FAST(){ ios::sync_with_stdio(false); cin.tie(0); }
-
 const int MAX = (1024 + 5);
 //號碼對應不同的L型方塊，前3個為L型方塊所佔有的土地; 第4個為L型方塊中，沒放置到的部分。
 const int dx[4][4] = {{1, 1, 0, 0}, {0, 1, 1, 0}, {0, 0, 1, 1}, {0, 1, 0, 1}};
@@ -74,9 +72,8 @@ void solve(int N, int X, int Y){
 	}
 }
 
+/*
 int main(){
-	FAST();
-
 	cin >> n >> x >> y;
 	solve(n, x, y);
 	return 0;
